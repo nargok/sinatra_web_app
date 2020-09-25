@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  ruby: circleci/ruby@0.1.2 
+  ruby: circleci/ruby@0.1.2
 
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run:
           name: bundle update
-          command: gem install budler:2.0.2
+          command: gem install bundler:2.0.2
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "Gemfile.lock" }}
