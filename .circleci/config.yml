@@ -23,4 +23,4 @@ jobs:
       - save_cache:
           paths:
             - ./vender/bundle
-          key: v1-dependencies-{{ checksum "Genfile.lock" }}
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
